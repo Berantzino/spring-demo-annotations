@@ -20,6 +20,11 @@ public class AnnotationDemoApp {
 		
 		System.out.println("Soccer Coach - getDailyWorkout: " + soccerCoach.getDailyWorkout());
 		
+		// call method to get the daily fortune
+		System.out.println("Tennis Coach - getDailyFortune: " + theCoach.getDailyFortune());
+		
+		System.out.println("Soccer Coach - getDailyFortune: " + soccerCoach.getDailyFortune());
+		
 		// close the context
 		context.close();
 	}
