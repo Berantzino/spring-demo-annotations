@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.stereotype.Component;
 
 @Component
@@ -19,6 +21,13 @@ public class FileFortuneService implements FortuneService {
 	private Random myRandom = new Random();
 	
 	public FileFortuneService() {
+		System.out.println(">> FileFortuneService: inside default constructor");
+	}
+	
+	@PostConstruct
+	public void loadFortuneList() {
+		
+		System.out.println(">> FileFortuneService: inside method loadFortuneList()");
 		
 		File theFile = new File(fileName);
 		
