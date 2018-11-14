@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class SoccerCoach implements Coach {
 
 	@Autowired
-	@Qualifier("happyFortuneService")
+	@Qualifier("fileFortuneService")
 	private FortuneService fortuneService;
 	
 	// define a default constructor
